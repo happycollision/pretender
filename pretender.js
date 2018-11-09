@@ -195,7 +195,7 @@ function interceptor(ctx) {
     var xhr = createPassthrough(this);
     xhr.send.apply(xhr, this.sendArguments);
     return xhr;
-  }
+  };
 
 
   function createPassthrough(fakeXHR) {
